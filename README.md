@@ -2,8 +2,8 @@
 - [SANSÜRLE MÜCADELE REHBERİ](#sans%C3%BCrle-m%C3%BCcadele-rehberi%CC%87)
   * [VPN nedir? Ne işe yarar?](#vpn-nedir-ne-işe-yarar)
   * [Önerilen VPNler listesi](#önerilen-vpnler-listesi)
-  * [DNS over HTTPS / DNS over TLS](#dns-over-https--dns-over-tls)
-    + [DNS nedir?](#dns-nedir)
+  * [DNS nedir?](#dns-nedir)
+    + [DNS over HTTPS / DNS over TLS](#dns-over-https--dns-over-tls)
       - [Android](#android)
       - [iOS](#ios)
       - [Windows 11](#windows-11)
@@ -36,15 +36,15 @@ VPN kullanarak, ilk olarak başka bir ülkedeki bir sunucuya, ardından bağlanm
 
 - Eğer bağlantı kuramazsanız, sağ üstteki dişli çark ikonuna tıklayıp ayarlara girin ve "VPN Settings" -> "WireGuard obfuscation" altından "UDP-over-TCP" seçeneğini seçin. Bu da başarısız olursa aynı menü altındaki "Shadowsocks" seçeneğini kullanmayı deneyebilirsiniz.
 
-## DNS over HTTPS / DNS over TLS
-
-### DNS nedir?
+## DNS nedir?
 
 DNS servisleri, bir web sitesini ziyaret etmek istediğinizde, o alan adını IP adresine dönüştüren servislerdir. Örneğin `wikipedia.org`'u ziyaret etmek istediğinizde size `185.15.58.224` IP adresini verecektir.
 
 DNS servisleri, genelde sisteminizin varsayılan ayarlarında şifresiz olarak çalışacaktır. Bu demektir ki, İSS'niz sizin erişmek istediğiniz siteler için yaptğınız DNS isteklerini görebilecek ve bu şekilde sansür veya gözetim uygulayabilecektir.
 
-DNS over HTTP veya DNS over TLS gibi Şifrelenmiş DNS protokolleri kullanarak bu problem çözülebilir ve sansür ile gözetim daha zor bir hale getirilebilir.
+### DNS over HTTPS / DNS over TLS
+
+DNS over HTTP veya DNS over TLS gibi şifrelenmiş DNS protokolleri kullanarak DNS isteklerinin şifresiz gönderilmesi problemi çözülebilir, bu şekilde sansür ile gözetim daha zor bir hale getirilebilir.
 
 **Not: Şifreli DNS servisleri kullanmak, VPNlerin aksine eriştiğiniz IP adresini İSS'nizden saklamayacaktır. Girilen sitelerin gizli kalması için VPNlerin yerine KULLANILMAMALIDIR. Sansür ve gözetimi zorlaştırmak için tek başına veya VPN'e ek olarak kullanımını tavsiye ediyoruz.**
 
