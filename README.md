@@ -48,6 +48,8 @@ DNS over HTTP veya DNS over TLS gibi şifrelenmiş DNS protokolleri kullanarak D
 
 **Not: Şifreli DNS servisleri kullanmak, VPNlerin aksine eriştiğiniz IP adresini İSS'nizden saklamayacaktır. Girilen sitelerin gizli kalması için VPNlerin yerine KULLANILMAMALIDIR. Sansür ve gözetimi zorlaştırmak için tek başına veya VPN'e ek olarak kullanımını tavsiye ediyoruz.**
 
+**Geliştirici notu: Bu tarz yazılımların geliştirilmesi sürecinde Cloudflare'in "Proxied" modunda kullanıldığı A kayıtları, "Full" SSL modu ile orjinal sunucu adresini gizli tutabilir ve ECH(Encrypted Client Hello) özelliğinden faydalanarak DoH kullanıcılarının sansürden etkilenmesini oldukça zorlaştırabilirsiniz.**
+
 #### Android
 
 Eğer telefoununuz Android 9 ve üzeri ise aşağıdaki adımları izleyerek DNS over TLS'i aktif hale getirebilirsiniz:
